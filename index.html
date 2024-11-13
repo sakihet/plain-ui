@@ -4,10 +4,98 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Plain UI</title>
+    <link href="./style.css" rel="stylesheet" />
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+    <div
+      id="app"
+      class="layout-center layout-stack-8 p-6"
+    >
+      <h1 class="text-center">Plain UI</h1>
+      <div class="text-center">Plain old CSS is enough.</div>
+      <h2>Typography</h2>
+      <div class="border-solid border-1 border-color-primary p-4">
+        <h1>Header 1</h1>
+        <h2>Header 2</h2>
+        <h3>Header 3</h3>
+        <h4>Header 4</h4>
+        <p class="text-primary">Text primary</p>
+        <p class="text-secondary">Text secondary</p>
+      </div>
+      <h2>Components</h2>
+      <h3>Button</h3>
+      <div>
+        <button class="px-4 py-2 border-solid border-1 border-color-primary text-small bg-button-primary text-inverted pointer">Button</button>
+        <button class="px-4 py-2 bg-transparent border-solid border-1 border-color-primary text-small pointer">Button</button>
+      </div>
+      <div>
+        <button class="w-8 h-8 bg-transparent border-solid border-1 border-color-primary text-small pointer">■</button>
+      </div>
+      <div class="font-size-0">
+        <button class="px-4 py-2 bg-transparent border-solid border-1 border-color-primary text-small pointer">Button 1</button>
+        <button class="px-4 py-2 bg-transparent border-solid border-1 border-color-primary text-small pointer">Button 2</button>
+        <button class="px-4 py-2 bg-transparent border-solid border-1 border-color-primary text-small pointer">Button 3</button>
+      </div>
+      <h3>Link</h3>
+      <div>
+        <a href="#">Link</a>
+      </div>
+      <h3>Input</h3>
+      <div class="layout-stack-3">
+        <h4>Text</h4>
+        <div>
+          <input type="text" class="h-8 px-2 py-1 border-solid border-1 border-color-primary" />
+        </div>
+        <div>
+          <input type="text" class="h-6 px-2 py-1 border-solid border-1 border-color-primary" />
+        </div>
+        <div>
+          <input type="text" class="h-8 w-full px-2 py-1 border-solid border-1 border-color-primary" />
+        </div>
+        <div>
+          <input type="text" class="h-6 w-full px-2 py-1 border-solid border-1 border-color-primary" />
+        </div>
+        <h4>Checkbox</h4>
+        <div>
+          <input type="checkbox" class="" />
+        </div>
+        <div>
+          <input type="checkbox" class="" switch />
+        </div>
+        <h4>Textarea</h4>
+        <div>
+          <textarea class="px-2 py-2 border-solid border-1 border-color-primary"></textarea>
+        </div>
+      </div>
+      <h3>Select</h3>
+      <div>
+        <select class="h-8 px-4 py-2 text-small border-solid border-1 border-color-primary">
+          <option>Dog</option>
+          <option>Cat</option>
+          <option>Hamster</option>
+        </select>
+      </div>
+      <h3>Menu</h3>
+      <div>
+        <ul class="border-solid border-1 border-color-primary list-style-none py-2 w-32">
+          <li class="h-8 px-4 py-2 text-small text-secondary text-center hover pointer">Item 1</li>
+          <li class="h-8 px-4 py-2 text-small text-secondary text-center hover pointer">Item 2</li>
+          <li class="h-8 px-4 py-2 text-small text-secondary text-center hover pointer">Item 3</li>
+        </ul>
+      </div>
+      <h3>Tag</h3>
+      <div class="">
+        <div class="inline-block bg-secondary px-2 text-small round-2 text-secondary">Tag 1</div>
+        <div class="inline-block bg-secondary px-2 text-small round-2 text-secondary">Tag 2</div>
+        <div class="inline-block bg-secondary px-2 text-small round-2 text-secondary">Tag 3</div>
+      </div>
+      <h3>Code</h3>
+      <div>
+        <pre class="p-4 bg-secondary">hello, world</pre>
+      </div>
+      <h2>Examples</h2>
+      <div class="text-secondary">TODO</div>
+    </div>
   </body>
 </html>
