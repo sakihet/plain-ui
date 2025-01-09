@@ -37,6 +37,21 @@
         <button class="px-4 py-2 bg-transparent border-solid border-1 border-color-primary text-small pointer">Button 2</button>
         <button class="px-4 py-2 bg-transparent border-solid border-1 border-color-primary text-small pointer">Button 3</button>
       </div>
+      <h3>Dropdown</h3>
+      <div>
+        <details class="">
+          <summary class="list-style-none">
+            <button class="w-8 h-8 bg-transparent border-solid border-1 border-color-primary text-small">●</button>
+          </summary>
+          <div>
+            <ul class="border-solid border-1 border-color-primary list-style-none py-2 w-32">
+              <li class="h-8 px-4 py-2 text-small text-secondary text-center hover pointer">Item 1</li>
+              <li class="h-8 px-4 py-2 text-small text-secondary text-center hover pointer">Item 2</li>
+              <li class="h-8 px-4 py-2 text-small text-secondary text-center hover pointer">Item 3</li>
+            </ul>
+          </div>
+        </details>
+      </div>
       <h3>Link</h3>
       <div>
         <a href="#">Link</a>
@@ -60,6 +75,10 @@
         <div>
           <input type="checkbox" class="" />
         </div>
+        <div>
+          <input type="checkbox" class="" checked />
+        </div>
+        <h4>Switch</h4>
         <div>
           <input type="checkbox" class="" switch />
         </div>
@@ -95,7 +114,43 @@
         <pre class="p-4 bg-secondary">hello, world</pre>
       </div>
       <h2>Examples</h2>
-      <div class="text-secondary">TODO</div>
+      <h3>TODO</h3>
+      <div>
+        <div class="layout-stack-4 p-8 bg-secondary">
+          <div>
+            <input type="text" class="h-8 w-full px-2 py-1 border-solid border-1 border-color-primary" placeholder="Add a task" />
+          </div>
+          <div>
+            <ul class="list-style-none layout-stack-2">
+              <li>
+                <div class="flex-row bg-primary">
+                  <div class="w-8 h-8 flex-column">
+                    <input type="checkbox" class="m-auto" />
+                  </div>
+                  <div class="f-1 px-1 py-1">Item 1</div>
+                  <div>
+                    <button class="w-8 h-8 bg-transparent border-solid border-1 border-color-primary text-small pointer">x</button>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="flex-row bg-primary">
+                  <div class="w-8 h-8 flex-column">
+                    <input type="checkbox" class="m-auto" checked />
+                  </div>
+                  <div class="f-1 px-1 py-1">Item 2</div>
+                  <div>
+                    <button class="w-8 h-8 bg-transparent border-solid border-1 border-color-primary text-small pointer">x</button>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

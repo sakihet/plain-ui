@@ -16,6 +16,9 @@
   display: flex;
   flex-direction: column;
 }
+.f-1 {
+  flex: 1;
+}
 
 /* size */
 .h-4 {
@@ -67,6 +70,9 @@
 }
 .p-6 {
   padding: var(--size-6);
+}
+.p-8 {
+  padding: var(--size-8);
 }
 .px-1 {
   padding-left: var(--size-1);
