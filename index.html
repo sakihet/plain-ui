@@ -113,6 +113,19 @@
       <div>
         <pre class="p-4 bg-secondary">hello, world</pre>
       </div>
+      <h3>Dialog</h3>
+      <div>
+        <button type="button" id="dialogOpenButton">Open</button>
+        <dialog id="dl">
+          <div class="p-4 layout-stack-2">
+            <div class="flex-row">
+              <h3 class="f-1">Header</h3>
+              <button id="dialogCloseButton">Close</button>
+            </div>
+            <div>Content</div>
+          </div>
+        </dialog>
+      </div>
       <h2>Examples</h2>
       <h3>TODO</h3>
       <div>
@@ -152,5 +165,6 @@
         </div>
       </div>
     </div>
+    <script type="module" src="/main.js"></script>
   </body>
 </html>
