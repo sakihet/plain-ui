@@ -7,41 +7,48 @@
     <title>Plain UI</title>
     <link href="./style.css" rel="stylesheet" />
   </head>
-  <body>
+  <body class="bg-primary text-primary">
     <div
       id="app"
       class="layout-center layout-stack-8 p-6"
     >
+      <div class="h-8 text-right">
+        <button
+          type="button"
+          id="toggleThemeButton"
+          class="px-4 py-2 bg-transparent border-solid border-1 border-color-primary text-small pointer hover"
+        >
+          Toggle Theme
+        </button>
+      </div>
       <h1 class="text-center">Plain UI</h1>
       <div class="text-center">Plain old CSS is enough.</div>
       <h2>Typography</h2>
-      <div class="border-solid border-1 border-color-primary p-4">
+      <div class="p-4">
         <h1>Header 1</h1>
         <h2>Header 2</h2>
         <h3>Header 3</h3>
         <h4>Header 4</h4>
-        <p class="text-primary">Text primary</p>
-        <p class="text-secondary">Text secondary</p>
       </div>
       <h2>Components</h2>
       <h3>Button</h3>
       <div>
         <button class="px-4 py-2 border-solid border-1 border-color-primary text-small bg-button-primary text-inverted pointer">Button</button>
-        <button class="px-4 py-2 bg-transparent border-solid border-1 border-color-primary text-small pointer">Button</button>
+        <button class="px-4 py-2 bg-transparent border-solid border-1 border-color-primary text-small pointer hover">Button</button>
       </div>
       <div>
-        <button class="w-8 h-8 bg-transparent border-solid border-1 border-color-primary text-small pointer">■</button>
+        <button class="w-8 h-8 bg-transparent border-solid border-1 border-color-primary text-small pointer hover">■</button>
       </div>
       <div class="font-size-0">
-        <button class="px-4 py-2 bg-transparent border-solid border-1 border-color-primary text-small pointer">Button 1</button>
-        <button class="px-4 py-2 bg-transparent border-solid border-1 border-color-primary text-small pointer">Button 2</button>
-        <button class="px-4 py-2 bg-transparent border-solid border-1 border-color-primary text-small pointer">Button 3</button>
+        <button class="px-4 py-2 bg-transparent border-solid border-1 border-color-primary text-small pointer hover">Button 1</button>
+        <button class="px-4 py-2 bg-transparent border-solid border-1 border-color-primary text-small pointer hover">Button 2</button>
+        <button class="px-4 py-2 bg-transparent border-solid border-1 border-color-primary text-small pointer hover">Button 3</button>
       </div>
       <h3>Dropdown</h3>
       <div>
         <details class="">
           <summary class="list-style-none">
-            <button class="w-8 h-8 bg-transparent border-solid border-1 border-color-primary text-small">●</button>
+            <button class="w-8 h-8 bg-transparent border-solid border-1 border-color-primary text-small hover">●</button>
           </summary>
           <div>
             <ul class="border-solid border-1 border-color-primary list-style-none py-2 w-32">
@@ -82,6 +89,10 @@
         <div>
           <input type="checkbox" class="" switch />
         </div>
+        <h4>Range</h4>
+        <div>
+          <input type="range" class="" />
+        </div>
         <h4>Textarea</h4>
         <div>
           <textarea class="px-2 py-2 border-solid border-1 border-color-primary"></textarea>
@@ -115,16 +126,62 @@
       </div>
       <h3>Dialog</h3>
       <div>
-        <button type="button" id="dialogOpenButton">Open</button>
-        <dialog id="dl">
+        <button
+          type="button"
+          id="dialogOpenButton"
+          class="px-4 py-2 bg-transparent border-solid border-1 border-color-primary text-small pointer hover"
+        >
+          Open
+        </button>
+        <dialog id="dl" class="layout-center my-4 border-solid border-1 border-color-primary">
           <div class="p-4 layout-stack-2">
-            <div class="flex-row">
+            <div class="flex-row layout-stack-h-2">
               <h3 class="f-1">Header</h3>
-              <button id="dialogCloseButton">Close</button>
+              <button
+                type="button"
+                id="dialogCloseButton"
+                class="px-4 py-2 bg-transparent border-solid border-1 border-color-primary text-small pointer"
+              >
+                Close
+              </button>
             </div>
             <div>Content</div>
           </div>
         </dialog>
+      </div>
+      <h3>Progress</h3>
+      <div>
+        <progress class="" value="50" max="100"></progress>
+      </div>
+      <h3>Scrollbar</h3>
+      <h4>Vertical</h4>
+      <div>
+        <div class="h-32 overflow-y-scroll border-solid border-1 border-color-primary">
+          <ul class="p-2 list-style-none text-secondary">
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+            <li>Item</li>
+          </ul>
+        </div>
+      </div>
+      <h4>Horizontal</h4>
+      <div>
+        <div class="h-32 w-64 overflow-hidden overflow-x-scroll border-solid border-1 border-color-primary">
+          <div class="p-2 w-128">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus nibh vitae feugiat vulputate. Donec convallis, purus quis posuere egestas, elit leo tincidunt tortor, id luctus enim nulla aliquam magna. Phasellus condimentum gravida ante. Ut nec nisl dapibus, suscipit erat quis, imperdiet nunc. Etiam ac metus tincidunt, finibus massa sagittis, aliquet neque. Mauris gravida risus vitae mauris tempus, nec dignissim nulla maximus. Cras consequat scelerisque urna, vel sollicitudin urna facilisis nec. Donec turpis orci, pellentesque vitae ligula a, lobortis convallis dolor. Nam nisl tortor, blandit at arcu eu, tincidunt auctor est. Curabitur lacinia nibh a metus molestie rhoncus. Donec sit amet auctor nunc. Pellentesque tristique dictum nisl, vitae euismod justo iaculis quis. Duis eget lectus lorem. Integer suscipit varius pellentesque.
+            </p>
+          </div>
+        </div>
+      </div>
+      <h3>Tooltip</h3>
+      <div>
+        <button class="px-4 py-2 bg-transparent border-solid border-1 border-color-primary text-small pointer hover">Button</button>
       </div>
       <h2>Examples</h2>
       <h3>TODO</h3>
@@ -158,7 +215,15 @@
                 </div>
               </li>
               <li>
-                <div></div>
+                <div class="flex-row bg-primary">
+                  <div class="w-8 h-8 flex-column">
+                    <input type="checkbox" class="m-auto" />
+                  </div>
+                  <div class="f-1 px-1 py-1">Item 3</div>
+                  <div>
+                    <button class="w-8 h-8 bg-transparent border-solid border-1 border-color-primary text-small pointer">x</button>
+                  </div>
+                </div>
               </li>
             </ul>
           </div>
