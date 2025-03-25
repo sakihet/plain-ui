@@ -42,16 +42,20 @@ body {
   --color-bg-hover: var(--color-gray-100);
   --color-bg-primary: var(--color-white);
   --color-bg-secondary: var(--color-gray-100);
+  --color-bg-scrollbar: var(--color-gray-100);
+  --color-bg-scrollbar-thumb: var(--color-gray-400);
 }
 /* dark */
 .dark>* {
   color-scheme: dark;
   --color-text-primary: var(--color-white);
-  --color-text-secondary: var(--color-gray-200);
+  --color-text-secondary: var(--color-gray-300);
   --color-text-inverted: var(--color-gray-900);
   --color-border-primary: var(--color-gray-500);
   --color-button-primary: var(--color-gray-100);
   --color-bg-hover: var(--color-gray-700);
   --color-bg-primary: var(--color-gray-900);
   --color-bg-secondary: var(--color-gray-700);
+  --color-bg-scrollbar: var(--color-gray-800);
+  --color-bg-scrollbar-thumb: var(--color-gray-500);
 }

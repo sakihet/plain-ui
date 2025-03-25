@@ -25,10 +25,41 @@
       <div class="text-center">Plain old CSS is enough.</div>
       <h2>Typography</h2>
       <div class="p-4">
-        <h1>Header 1</h1>
-        <h2>Header 2</h2>
-        <h3>Header 3</h3>
-        <h4>Header 4</h4>
+        <h3>Heading</h3>
+        <div class="p-4">
+          <h1>Header 1</h1>
+          <h2>Header 2</h2>
+          <h3>Header 3</h3>
+          <h4>Header 4</h4>
+        </div>
+        <h3>Paragraph</h3>
+        <div class="p-4">
+          <p class="text-primary">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus nibh vitae feugiat vulputate. Donec convallis, purus quis posuere egestas, elit leo tincidunt tortor, id luctus enim nulla aliquam magna.
+          </p>
+          <p class="text-secondary">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus nibh vitae feugiat vulputate. Donec convallis, purus quis posuere egestas, elit leo tincidunt tortor, id luctus enim nulla aliquam magna.
+          </p>
+        </div>
+        <h3>Blockquote</h3>
+        <div class="p-4">
+          <blockquote>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus nibh vitae feugiat vulputate. Donec convallis, purus quis posuere egestas, elit leo tincidunt tortor, id luctus enim nulla aliquam magna.
+          </blockquote>
+        </div>
+        <h3>List</h3>
+        <div class="py-4 pl-8">
+          <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+          </ul>
+          <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+          </ol>
+        </div>
       </div>
       <h2>Components</h2>
       <h3>Button</h3>
@@ -46,18 +77,21 @@
       </div>
       <h3>Dropdown</h3>
       <div>
-        <details class="">
-          <summary class="list-style-none">
-            <button class="w-8 h-8 bg-transparent border-solid border-1 border-color-primary text-small hover">●</button>
-          </summary>
-          <div>
-            <ul class="border-solid border-1 border-color-primary list-style-none py-2 w-32">
-              <li class="h-8 px-4 py-2 text-small text-secondary text-center hover pointer">Item 1</li>
-              <li class="h-8 px-4 py-2 text-small text-secondary text-center hover pointer">Item 2</li>
-              <li class="h-8 px-4 py-2 text-small text-secondary text-center hover pointer">Item 3</li>
-            </ul>
-          </div>
-        </details>
+        <div class="flex-row">
+          <div class="f-1"></div>
+          <details class="pattern-dropdown">
+            <summary class="w-24 h-8 px-2 text-small py-1 border-solid border-1 border-color-primary pointer hover">
+              Dropdown
+            </summary>
+            <div>
+              <ul class="border-solid border-1 border-color-primary list-style-none py-2 w-32">
+                <li class="h-8 px-4 py-2 text-small text-secondary text-center hover pointer">Item 1</li>
+                <li class="h-8 px-4 py-2 text-small text-secondary text-center hover pointer">Item 2</li>
+                <li class="h-8 px-4 py-2 text-small text-secondary text-center hover pointer">Item 3</li>
+              </ul>
+            </div>
+          </details>
+        </div>
       </div>
       <h3>Link</h3>
       <div>
@@ -89,6 +123,26 @@
         <div>
           <input type="checkbox" class="" switch />
         </div>
+        <h4>Radio</h4>
+        <div>
+          <input type="radio" class="" name="r1" />
+          <input type="radio" class="" name="r1" />
+          <input type="radio" class="" name="r1" />
+        </div>
+        <div>
+          <label>
+            <input type="radio" class="" name="r2" />
+            <span>Item 1</span>
+          </label>
+          <label>
+            <input type="radio" class="" name="r2" />
+            <span>Item 2</span>
+          </label>
+          <label>
+            <input type="radio" class="" name="r2" />
+            <span>Item 3</span>
+          </label>
+        </div>
         <h4>Range</h4>
         <div>
           <input type="range" class="" />
@@ -97,13 +151,26 @@
         <div>
           <textarea class="px-2 py-2 border-solid border-1 border-color-primary"></textarea>
         </div>
+        <h5>Auto resize</h5>
+        <div>
+          <textarea class="px-2 py-2 border-solid border-1 border-color-primary field-sizing-content"></textarea>
+        </div>
       </div>
       <h3>Select</h3>
+      <h4>Single</h4>
       <div>
         <select class="h-8 px-4 py-2 text-small border-solid border-1 border-color-primary">
-          <option>Dog</option>
           <option>Cat</option>
+          <option>Dog</option>
           <option>Hamster</option>
+        </select>
+      </div>
+      <h4>Multiple</h4>
+      <div>
+        <select class="px-2 py-2 text-small border-solid border-1 border-color-primary layout-stack-1" multiple>
+          <option class="h-6 px-2 py-1">Cat</option>
+          <option class="h-6 px-2 py-1">Dog</option>
+          <option class="h-6 px-2 py-1">Hamster</option>
         </select>
       </div>
       <h3>Menu</h3>
@@ -116,9 +183,14 @@
       </div>
       <h3>Tag</h3>
       <div class="">
-        <div class="inline-block bg-secondary px-2 text-small round-2 text-secondary">Tag 1</div>
-        <div class="inline-block bg-secondary px-2 text-small round-2 text-secondary">Tag 2</div>
-        <div class="inline-block bg-secondary px-2 text-small round-2 text-secondary">Tag 3</div>
+        <div class="inline-block bg-secondary px-2 text-small round-2 text-secondary border-solid border-1 border-color-primary hover">Tag 1</div>
+        <div class="inline-block bg-secondary px-2 text-small round-2 text-secondary border-solid border-1 border-color-primary hover">Tag 2</div>
+        <div class="inline-block bg-secondary px-2 text-small round-2 text-secondary border-solid border-1 border-color-primary hover">Tag 3</div>
+      </div>
+      <div class="">
+        <div class="inline-block bg-transparent px-2 text-small round-2 text-secondary border-solid border-1 border-color-primary hover">Tag 1</div>
+        <div class="inline-block bg-transparent px-2 text-small round-2 text-secondary border-solid border-1 border-color-primary hover">Tag 2</div>
+        <div class="inline-block bg-transparent px-2 text-small round-2 text-secondary border-solid border-1 border-color-primary hover">Tag 3</div>
       </div>
       <h3>Code</h3>
       <div>
@@ -133,14 +205,14 @@
         >
           Open
         </button>
-        <dialog id="dl" class="layout-center my-4 border-solid border-1 border-color-primary">
-          <div class="p-4 layout-stack-2">
+        <dialog id="dl" class="layout-center my-4 border-solid border-1 border-color-primary w-min-60ch">
+          <div class="p-8 layout-stack-4">
             <div class="flex-row layout-stack-h-2">
               <h3 class="f-1">Header</h3>
               <button
                 type="button"
                 id="dialogCloseButton"
-                class="px-4 py-2 bg-transparent border-solid border-1 border-color-primary text-small pointer"
+                class="px-4 py-2 bg-transparent border-solid border-1 border-color-primary text-small pointer hover"
               >
                 Close
               </button>
@@ -156,7 +228,7 @@
       <h3>Scrollbar</h3>
       <h4>Vertical</h4>
       <div>
-        <div class="h-32 overflow-y-scroll border-solid border-1 border-color-primary">
+        <div class="h-32 overflow-y-scroll border-solid border-1 border-color-primary pattern-scrollbar-thick">
           <ul class="p-2 list-style-none text-secondary">
             <li>Item</li>
             <li>Item</li>
@@ -171,7 +243,7 @@
       </div>
       <h4>Horizontal</h4>
       <div>
-        <div class="h-32 w-64 overflow-hidden overflow-x-scroll border-solid border-1 border-color-primary">
+        <div class="h-32 w-64 overflow-hidden overflow-x-scroll border-solid border-1 border-color-primary pattern-scrollbar-thick">
           <div class="p-2 w-128">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus nibh vitae feugiat vulputate. Donec convallis, purus quis posuere egestas, elit leo tincidunt tortor, id luctus enim nulla aliquam magna. Phasellus condimentum gravida ante. Ut nec nisl dapibus, suscipit erat quis, imperdiet nunc. Etiam ac metus tincidunt, finibus massa sagittis, aliquet neque. Mauris gravida risus vitae mauris tempus, nec dignissim nulla maximus. Cras consequat scelerisque urna, vel sollicitudin urna facilisis nec. Donec turpis orci, pellentesque vitae ligula a, lobortis convallis dolor. Nam nisl tortor, blandit at arcu eu, tincidunt auctor est. Curabitur lacinia nibh a metus molestie rhoncus. Donec sit amet auctor nunc. Pellentesque tristique dictum nisl, vitae euismod justo iaculis quis. Duis eget lectus lorem. Integer suscipit varius pellentesque.
@@ -182,6 +254,13 @@
       <h3>Tooltip</h3>
       <div>
         <button class="px-4 py-2 bg-transparent border-solid border-1 border-color-primary text-small pointer hover">Button</button>
+      </div>
+      <h3>Card</h3>
+      <div>
+        <div class="w-64 h-32 p-4 border-solid border-1 border-color-primary layout-stack-2 round-2">
+          <div>Card title</div>
+          <div class="text-small text-secondary">Content</div>
+        </div>
       </div>
       <h2>Examples</h2>
       <h3>TODO</h3>

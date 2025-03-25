@@ -77,6 +77,9 @@
 .w-full {
   width: 100%;
 }
+.w-min-60ch {
+  min-width: 60ch;
+}
 
 /* spacing */
 .my-4 {
@@ -131,6 +134,9 @@
 }
 .pl-0 {
   padding-left: 0;
+}
+.pl-8 {
+  padding-left: var(--size-8);
 }
 .m-auto {
   margin: auto;
@@ -212,4 +218,9 @@
 /* cursor */
 .pointer {
   cursor: pointer;
+}
+
+/* field-sizing */
+.field-sizing-content {
+  field-sizing: content;
 }
