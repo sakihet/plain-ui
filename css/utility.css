@@ -46,11 +46,20 @@
 .overflow-scroll {
   overflow: scroll;
 }
+.overflow-x-scroll {
+  overflow-x: scroll;
+}
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+.overflow-y-auto {
+  overflow-y: auto;
+}
 .overflow-y-scroll {
   overflow-y: scroll;
 }
-.overflow-x-scroll {
-  overflow-x: scroll;
+.overflow-y-hidden {
+  overflow-y: hidden;
 }
 
 /* size */
@@ -69,6 +78,12 @@
 .h-32 {
   height: var(--size-32);
 }
+.h-100vh {
+  height: 100vh;
+}
+.h-full {
+  height: 100%;
+}
 .w-4 {
   width: var(--size-4);
 }
@@ -77,6 +92,9 @@
 }
 .w-8 {
   width: var(--size-8);
+}
+.w-12 {
+  width: var(--size-10);
 }
 .w-16 {
   width: var(--size-16);
@@ -95,6 +113,9 @@
 }
 .w-min-60ch {
   min-width: 60ch;
+}
+.w-min-64 {
+  min-width: var(--size-64);
 }
 
 /* spacing */
@@ -213,6 +234,12 @@
 /* text */
 .text-small {
   font-size: 0.75rem;
+}
+.text-medium {
+  font-size: 1rem;
+}
+.text-large {
+  font-size: 1.25rem;
 }
 .font-size-0 {
   font-size: 0;

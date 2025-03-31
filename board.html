@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plain UI</title>
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+  <body class="bg-primary text-primary">
+    <div
+      id="app"
+      class="p-6 layout-stack-4 h-100vh overflow-x-scroll pattern-scrollbar-thick overflow-y-hidden"
+    >
+      <div class="layout-stack-1">
+        <div class="flex-row">
+          <h1 class="f-1 text-medium">Board</h1>
+          <div class="">
+            <button
+              type="button"
+              id="toggleThemeButton"
+              class="px-2 py-1 bg-transparent border-solid border-1 border-color-primary text-small pointer hover"
+            >
+              Toggle Theme
+            </button>
+          </div>
+        </div>
+        <p class="text-small text-secondary">Description</p>
+      </div>
+      <div class="h-6">
+        <input
+          type="text"
+          class="h-6 w-64 px-2 py-1 border-solid border-1 border-color-primary"
+          placeholder="Filter"
+        />
+      </div>
+      <div class="flex-row layout-stack-h-2">
+        <div class="w-min-64 bg-secondary h-full p-3 drop-shadow">
+          <div class="h-8 flex-row">
+            <h2 class="f-1 text-medium">To Do</h2>
+            <div class="text-small font-mono text-secondary text-right w-8">3</div>
+          </div>
+          <div class="pattern-board-list-height overflow-y-auto pattern-scrollbar-thin">
+            <ul class="list-style-none p-0 layout-stack-2">
+              <li>
+                <div class="h-16 bg-primary drop-shadow">
+                  <div class="p-2">Task</div>
+                </div>
+              </li>
+              <li>
+                <div class="h-16 bg-primary drop-shadow">
+                  <div class="p-2">Task</div>
+                </div>
+              </li>
+              <li>
+                <div class="h-16 bg-primary drop-shadow">
+                  <div class="p-2">Task</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="w-min-64 bg-secondary h-full p-3 drop-shadow">
+          <div class="h-8 flex-row">
+            <h2 class="f-1 text-medium">In Progress</h2>
+            <div class="text-small font-mono text-secondary text-right w-8">8</div>
+          </div>
+          <div class="pattern-board-list-height overflow-y-auto pattern-scrollbar-thin">
+            <ul class="list-style-none p-0 layout-stack-2">
+              <li>
+                <div class="h-16 bg-primary drop-shadow">
+                  <div class="p-2">Task</div>
+                </div>
+              </li>
+              <li>
+                <div class="h-16 bg-primary drop-shadow">
+                  <div class="p-2">Task</div>
+                </div>
+              </li>
+              <li>
+                <div class="h-16 bg-primary drop-shadow">
+                  <div class="p-2">Task</div>
+                </div>
+              </li>
+              <li>
+                <div class="h-16 bg-primary drop-shadow">
+                  <div class="p-2">Task</div>
+                </div>
+              </li>
+              <li>
+                <div class="h-16 bg-primary drop-shadow">
+                  <div class="p-2">Task</div>
+                </div>
+              </li>
+              <li>
+                <div class="h-16 bg-primary drop-shadow">
+                  <div class="p-2">Task</div>
+                </div>
+              </li>
+              <li>
+                <div class="h-16 bg-primary drop-shadow">
+                  <div class="p-2">Task</div>
+                </div>
+              </li>
+              <li>
+                <div class="h-16 bg-primary drop-shadow">
+                  <div class="p-2">Task</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="w-min-64 bg-secondary h-full p-3 drop-shadow">
+          <div class="h-8 flex-row">
+            <h2 class="text-medium">Review</h2>
+            <div class="text-small font-mono text-secondary text-right w-8">1</div>
+          </div>
+          <div class="pattern-board-list-height overflow-y-auto pattern-scrollbar-thin">
+            <ul class="list-style-none p-0 layout-stack-2">
+              <li>
+                <div class="h-16 bg-primary drop-shadow">
+                  <div class="p-2">Task</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="w-min-64 bg-secondary h-full p-3 drop-shadow">
+          <div class="h-8 flex-row">
+            <h2 class="text-medium">Done</h2>
+            <div class="text-small font-mono text-secondary text-right w-8">5</div>
+          </div>
+          <div class="pattern-board-list-height overflow-y-auto pattern-scrollbar-thin">
+            <ul class="list-style-none p-0 layout-stack-2">
+              <li>
+                <div class="h-16 bg-primary drop-shadow">
+                  <div class="p-2">Task</div>
+                </div>
+              </li>
+              <li>
+                <div class="h-16 bg-primary drop-shadow">
+                  <div class="p-2">Task</div>
+                </div>
+              </li>
+              <li>
+                <div class="h-16 bg-primary drop-shadow">
+                  <div class="p-2">Task</div>
+                </div>
+              </li>
+              <li>
+                <div class="h-16 bg-primary drop-shadow">
+                  <div class="p-2">Task</div>
+                </div>
+              </li>
+              <li>
+                <div class="h-16 bg-primary drop-shadow">
+                  <div class="p-2">Task</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div> <!-- app -->
+    <script type="module" src="/board.js"></script>
+  </body>
+</html>

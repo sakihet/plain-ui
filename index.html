@@ -97,17 +97,12 @@
           <button class="px-4 py-2 w-full bg-transparent border-solid border-1 border-color-primary text-small pointer hover">Button</button>
         </div>
       </div>
-      <div class="font-size-0">
-        <button class="px-4 py-2 bg-transparent border-solid border-1 border-color-primary text-small pointer hover">Button 1</button>
-        <button class="px-4 py-2 bg-transparent border-solid border-1 border-color-primary text-small pointer hover">Button 2</button>
-        <button class="px-4 py-2 bg-transparent border-solid border-1 border-color-primary text-small pointer hover">Button 3</button>
-      </div>
       <h4>Button Group</h4>
       <div>
         <div class="pattern-button-group">
-          <button class="px-4 py-2 bg-transparent hover">Button 1</button>
-          <button class="px-4 py-2 bg-transparent hover">Button 2</button>
-          <button class="px-4 py-2 bg-transparent hover">Button 3</button>
+          <button class="px-4 py-2 bg-transparent hover text-small">Button 1</button>
+          <button class="px-4 py-2 bg-transparent hover text-small">Button 2</button>
+          <button class="px-4 py-2 bg-transparent hover text-small">Button 3</button>
         </div>
       </div>
       <h3>Dropdown</h3>
@@ -115,7 +110,7 @@
         <div class="flex-row">
           <div class="f-1"></div>
           <details class="pattern-dropdown">
-            <summary class="w-24 h-8 px-4 text-small py-1 border-solid border-1 border-color-primary pointer hover">
+            <summary class="w-24 h- px-4 text-small py-1 border-solid border-1 border-color-primary pointer hover">
               Dropdown
             </summary>
             <div class="drop-shadow bg-primary">
@@ -131,6 +126,7 @@
       <h3>Link</h3>
       <div>
         <a href="#">Link</a>
+        <a href="#" class="text-secondary">Link</a>
       </div>
       <h3>Input</h3>
       <div class="layout-stack-3">
@@ -147,6 +143,13 @@
         <div>
           <input type="text" class="h-6 w-full px-2 py-1 border-solid border-1 border-color-primary" />
         </div>
+        <h4>Number</h4>
+        <div>
+          <input type="number" class="h-8 w-16 px-2 py-1 border-solid border-1 border-color-primary" />
+        </div>
+        <div>
+          <input type="number" class="h-6 w-16 px-2 py-1 border-solid border-1 border-color-primary" />
+        </div>
         <h4>Checkbox</h4>
         <div>
           <input type="checkbox" class="" />
@@ -156,6 +159,11 @@
         </div>
         <h4>Switch</h4>
         <div>
+          <!-- TODO -->
+          <input type="checkbox" class="pattern-switch" />
+        </div>
+        <div>
+          <!-- safari only -->
           <input type="checkbox" class="" switch />
         </div>
         <h4>Radio</h4>
@@ -177,6 +185,14 @@
             <input type="radio" class="" name="r2" />
             <span>Item 3</span>
           </label>
+        </div>
+        <h4>Date</h4>
+        <div>
+          <input type="date" class="h-8 px-2 py-1 border-solid border-1 border-color-primary" />
+        </div>
+        <h4>File</h4>
+        <div>
+          <input type="file" class="h-8 px-2 py-1 border-solid border-1 border-color-primary" />
         </div>
         <h4>Range</h4>
         <div>
@@ -320,7 +336,7 @@
         </button>
         <div
           id="tooltip"
-          class="bg-secondary border-solid border-1 border-color-primary px-2 my-popover"
+          class="bg-secondary border-solid border-1 border-color-primary px-2 my-popover text-small"
           popover
         >
           Tooltip
@@ -379,7 +395,17 @@
           </div>
         </div>
       </div>
-    </div>
+      <ul>
+        <li>
+          <a href="./board.html">Board</a>
+        </li>
+        <!-- <li>
+          <a href="./note.html">Note</a>
+        </li> -->
+      </ul>
+      <div>
+      </div>
+    </div> <!-- app -->
     <script type="module" src="/main.js"></script>
   </body>
 </html>
