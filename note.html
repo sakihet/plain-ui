@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Note</title>
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+  <body class="bg-primary text-primary">
+    <div
+      id="app"
+      class="layout-stack-4 h-100vh pattern-scrollbar-thick overflow-y-hidden flex-column"
+    >
+      <div class="f-1 flex-row">
+        <div class="w-64 p-4 bg-secondary h-full layout-stack-2">
+          <div class="h-6">
+            <input
+              type="text"
+              class="border-solid border-1 border-color-primary w-full px-2 py-1"
+              placeholder="Search"
+            />
+          </div>
+          <div class="">
+            <button
+              type="button"
+              class="w-full px-4 py-2 border-solid border-1 border-color-primary text-small bg-button-primary text-inverted pointer"
+            >
+              Create Note
+            </button>
+          </div>
+          <div class="h-6 flex-row">
+            <h2 class="f-1 text-medium">Notes</h2>
+            <div class="layout-stack-h-2 flex-row">
+              <div class="w-8 py-1 text-right font-mono text-secondary">123</div>
+              <button type="button" class="w-6 h-6 border-solid border-1 border-color-primary bg-transparent"></button>
+            </div>
+          </div>
+          <ul class="list-style-none p-0 layout-stack-1 overflow-y-auto pattern-note-list-height pattern-scrollbar-thin">
+            <li>
+              <div class="bg-primary p-2">
+                <div class="">Title</div>
+                <div class="text-small text-secondary">Content</div>
+              </div>
+            </li>
+            <li>
+              <div class="bg-primary p-2">
+                <div class="">Title</div>
+                <div class="text-small text-secondary">Content</div>
+              </div>
+            </li>
+            <li>
+              <div class="bg-primary p-2">
+                <div class="">Title</div>
+                <div class="text-small text-secondary">Content</div>
+              </div>
+            </li>
+            <li>
+              <div class="bg-primary p-2">
+                <div class="">Title</div>
+                <div class="text-small text-secondary">Content</div>
+              </div>
+            </li>
+            <li>
+              <div class="bg-primary p-2">
+                <div class="">Title</div>
+                <div class="text-small text-secondary">Content</div>
+              </div>
+            </li>
+            <li>
+              <div class="bg-primary p-2">
+                <div class="">Title</div>
+                <div class="text-small text-secondary">Content</div>
+              </div>
+            </li>
+            <li>
+              <div class="bg-primary p-2">
+                <div class="">Title</div>
+                <div class="text-small text-secondary">Content</div>
+              </div>
+            </li>
+            <li>
+              <div class="bg-primary p-2">
+                <div class="">Title</div>
+                <div class="text-small text-secondary">Content</div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="f-1 p-4 layout-stack-2">
+          <div class="h-6 flex-row">
+            <div class="f-1"></div>
+            <div class="layout-stack-h-2">
+              <a
+                href="./index.html"
+                class="px-2 py-1 border-solid border-1 border-color-primary text-small pointer hover text-secondary text-decoration-none"
+              >
+                Index
+              </a>
+              <button
+                type="button"
+                id="toggleThemeButton"
+                class="px-2 py-1 bg-transparent border-solid border-1 border-color-primary text-small pointer hover"
+              >
+                Toggle Theme
+              </button>
+            </div>
+          </div>
+          <div class="">
+            Content
+          </div>
+        </div>
+      </div>
+    </div> <!-- app -->
+    <script type="module" src="/note.js"></script>
+  </body>
+</html>

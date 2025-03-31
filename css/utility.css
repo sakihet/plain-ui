@@ -102,6 +102,9 @@
 .w-32 {
   width: var(--size-32);
 }
+.w-48 {
+  width: var(--size-48);
+}
 .w-64 {
   width: var(--size-64);
 }
@@ -193,6 +196,11 @@
 }
 .text-right {
   text-align: right;
+}
+
+/* text-decoration */
+.text-decoration-none {
+  text-decoration: none;
 }
 
 /* border */
