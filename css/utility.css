@@ -20,6 +20,22 @@
   flex: 1;
 }
 
+/* position */
+.relative {
+  position: relative;
+}
+.fixed {
+  position: fixed;
+}
+.top-right-4 {
+  top: 1rem;
+  right: 1rem;
+}
+.bottom-right-4 {
+  bottom: 1rem;
+  right: 1rem;
+}
+
 /* overflow */
 .overflow-hidden {
   overflow: hidden;
@@ -202,6 +218,17 @@
   font-size: 0;
 }
 
+/* font family */
+.font-serif {
+  font-family: serif;
+}
+.font-sans {
+  font-family: sans-serif;
+}
+.font-mono {
+  font-family: monospace;
+}
+
 /* round */
 .round-1 {
   border-radius: 0.25rem;
@@ -223,4 +250,12 @@
 /* field-sizing */
 .field-sizing-content {
   field-sizing: content;
+}
+
+/* shadow */
+.drop-shadow {
+  filter:
+    drop-shadow(0 1px 2px var(--color-shadow-primary))
+    drop-shadow(0 1px 1px var(--color-shadow-secondary))
+  ;
 }
