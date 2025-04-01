@@ -5,6 +5,7 @@
 @import url("css/layout.css");
 @import url("css/pattern.css");
 
+/* workaround */
 .my-anchor {
   anchor-name: --my-anchor;
 }
@@ -12,4 +13,44 @@
   position-anchor: --my-anchor;
   top: calc(anchor(bottom) + 0.5rem);
   justify-self: anchor-center
+}
+
+.dropdown-anchor {
+  anchor-name: --dropdown-anchor;
+}
+.dropdown-content {
+  position-anchor: --dropdown-anchor;
+  top: calc(anchor(bottom) + 0.5rem);
+  left: calc(anchor(left));
+}
+.dropdown-content[popover]:popover-open {
+  background-color: var(--color-bg-primary);
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--color-border-primary);
+  filter:
+    drop-shadow(0 1px 2px var(--color-shadow-primary))
+    drop-shadow(0 1px 1px var(--color-shadow-secondary))
+  ;
+}
+
+.dropdown-anchor-right {
+  anchor-name: --dropdown-anchor-right;
+}
+.dropdown-content-right {
+  position-anchor: --dropdown-anchor-right;
+  position-area: bottom span-left;
+  position: absolute;
+  top: calc(anchor(bottom) + 0.5rem);
+  right: anchor(right);
+}
+.dropdown-content-right[popover]:popover-open {
+  background-color: var(--color-bg-primary);
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--color-border-primary);
+  filter:
+    drop-shadow(0 1px 2px var(--color-shadow-primary))
+    drop-shadow(0 1px 1px var(--color-shadow-secondary))
+  ;
 }

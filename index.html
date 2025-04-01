@@ -106,6 +106,7 @@
         </div>
       </div>
       <h3>Dropdown</h3>
+      <h4>Details</h4>
       <div>
         <div class="flex-row">
           <div class="f-1"></div>
@@ -121,6 +122,50 @@
               </ul>
             </div>
           </details>
+        </div>
+      </div>
+      <h4>Popover API, Anchor Positioning</h4>
+      <div>
+        <button
+          class="px-4 py-2 bg-transparent border-solid border-1 border-color-primary text-small pointer hover dropdown-anchor"
+          type="button"
+          popovertarget="dropdown-content"
+        >
+          Button
+        </button>
+        <div
+          id="dropdown-content"
+          class="dropdown-content"
+          popover
+        >
+          <ul class="list-style-none py-2 w-32">
+            <li class="h-8 px-4 py-2 text-small text-secondary text-center hover pointer">Item 1</li>
+            <li class="h-8 px-4 py-2 text-small text-secondary text-center hover pointer">Item 2</li>
+            <li class="h-8 px-4 py-2 text-small text-secondary text-center hover pointer">Item 3</li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <div class="flex-row">
+          <div class="f-1"></div>
+          <button
+            class="px-4 py-2 bg-transparent border-solid border-1 border-color-primary text-small pointer hover dropdown-anchor-right"
+            type="button"
+            popovertarget="dropdown-content-right"
+          >
+            Button
+          </button>
+          <div
+            id="dropdown-content-right"
+            class="dropdown-content-right"
+            popover
+          >
+            <ul class="list-style-none py-2 w-32">
+              <li class="h-8 px-4 py-2 text-small text-secondary text-center hover pointer">Item 1</li>
+              <li class="h-8 px-4 py-2 text-small text-secondary text-center hover pointer">Item 2</li>
+              <li class="h-8 px-4 py-2 text-small text-secondary text-center hover pointer">Item 3</li>
+            </ul>
+          </div>
         </div>
       </div>
       <h3>Link</h3>
