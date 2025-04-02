@@ -1,3 +1,38 @@
+/* switch */
+.pattern-switch {
+  position: relative;
+  display: inline-block;
+  height: var(--size-5);
+  width: var(--size-8);
+  /* slider */
+  span {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--color-border-primary);
+  }
+  input:checked + span {
+    background-color: var(--color-bg-switch);
+  }
+  span:before {
+    position: absolute;
+    content: "";
+    top: var(--size-1);
+    left: var(--size-1);
+    height: var(--size-3);
+    width: var(--size-3);
+    background-color: var(--color-bg-secondary);
+  }
+  input {
+    appearance: none;
+  }
+  input:checked + span:before {
+    transform: translateX(var(--size-3));
+  }
+}
 /* dropdown */
 .pattern-dropdown {
   position: relative;

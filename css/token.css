@@ -3,6 +3,7 @@
   --size-2: 0.5rem;
   --size-3: 0.75rem;
   --size-4: 1rem;
+  --size-5: 1.25rem;
   --size-6: 1.5rem;
   --size-8: 2rem;
   --size-10: 2.5rem;
@@ -46,6 +47,7 @@ body {
   --color-bg-secondary: var(--color-gray-100);
   --color-bg-scrollbar: var(--color-gray-100);
   --color-bg-scrollbar-thumb: var(--color-gray-400);
+  --color-bg-switch: var(--color-blue-500);
   --color-shadow-primary: rgba(0 0 0 / 0.2);
   --color-shadow-secondary: rgba(0 0 0 / 0.1);
 }
@@ -62,6 +64,7 @@ body {
   --color-bg-secondary: var(--color-gray-700);
   --color-bg-scrollbar: var(--color-gray-800);
   --color-bg-scrollbar-thumb: var(--color-gray-500);
+  --color-bg-switch: var(--color-blue-300);
   --color-shadow-primary: rgba(255 255 255 / 0.2);
   --color-shadow-secondary: rgba(255 255 255 / 0.1);
 }
