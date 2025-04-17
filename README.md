@@ -1,4 +1,6 @@
-# * UI
+#
+
+Zero-dependency, Framework-agnostic collection of CSS and UI implementations.
 
 ## Slogan
 
@@ -18,3 +20,13 @@ Plain old CSS is enough.
   - Create layouts
 - pattern.css
   - Create common UI
+
+![diagram](./diagram.png)
+
+## Benefits
+
+You can build a design system that doesn't rely on any UI library. This approach minimizes the long-term maintenance costs. Since it works with any UI library, you can maximizes your freedom of choice.
+
+## Demerits
+
+You need to write all CSS stuff. Learning CSS is essential.
