@@ -51,6 +51,7 @@ body {
   --color-shadow-primary: rgba(0 0 0 / 0.2);
   --color-shadow-secondary: rgba(0 0 0 / 0.1);
 }
+
 /* dark */
 .dark>* {
   color-scheme: dark;

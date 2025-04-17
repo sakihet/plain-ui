@@ -1,12 +1,10 @@
-#
-
-Zero-dependency, Framework-agnostic collection of CSS and UI implementations.
+Zero-dependency, Framework-agnostic collection of modular CSS and UI implementations.
 
 ## Slogan
 
 Plain old CSS is enough.
 
-## Files and their roles
+## Files
 
 - reset.css
   - Reduce the complexity
@@ -20,6 +18,8 @@ Plain old CSS is enough.
   - Create layouts
 - pattern.css
   - Create common UI
+
+### Relations
 
 ![diagram](./diagram.png)
 

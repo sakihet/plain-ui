@@ -33,6 +33,7 @@
     transform: translateX(var(--size-3));
   }
 }
+
 /* dropdown */
 .pattern-dropdown {
   position: relative;
@@ -80,6 +81,7 @@ details[open].pattern-dropdown>summary:before {
 .pattern-scrollbar-thin::-webkit-scrollbar-thumb {
   background-color: var(--color-bg-scrollbar-thumb);
 }
+
 /* button-group */
 .pattern-button-group {
   display: inline-block;
@@ -100,6 +102,7 @@ details[open].pattern-dropdown>summary:before {
   border-left-width: 1px;
   border-color: var(--color-border-primary);
 }
+
 /* specific */
 .pattern-board-list-height {
   max-height: calc(100vh - 13rem);
